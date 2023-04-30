@@ -52,7 +52,7 @@ variable "names" {
 }
 
 variable "status" {
-  type = list(string)
+  type = string
 }
 
 

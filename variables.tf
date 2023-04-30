@@ -3,15 +3,15 @@ variable "my_region" {
   description = "This variable is used to specify region"
 }
 
-variable "my_access_key" {
-  type        = string
-  description = "This variable is used to specify access_key"
+variable "instance_type" {
+    type = string
+    default = "t2.micro"  
 }
 
-variable "my_secret_key" {
-  type        = string
-  description = "This variable is used to specify access_key"
+variable "my_key_name" {
+  type = string
 }
+
 
 variable "my_domain_name" {
   type = string
@@ -39,9 +39,6 @@ variable "my_local_aws_private_key_path" {
 
 }
 
-variable "my_key_name" {
-  type = string
-}
 
 variable "db_want" {
   type    = bool

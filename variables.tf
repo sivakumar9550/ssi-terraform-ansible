@@ -47,6 +47,15 @@ variable "my_local_aws_private_key_path" {
 
 }
 
+variable "names" {
+  type = string
+}
+
+variable "status" {
+  type = string
+}
+
+
 
 variable "db_want" {
   type    = bool

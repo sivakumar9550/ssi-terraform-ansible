@@ -52,10 +52,9 @@ variable "names" {
 }
 
 variable "status" {
-  type = string
+  type    = list(string)
+  default = ["active", "inactive"]
 }
-
-
 
 variable "db_want" {
   type    = bool

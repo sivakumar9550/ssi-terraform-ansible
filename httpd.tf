@@ -7,7 +7,7 @@ resource "aws_instance" "httpd_server" {
   connection {
     type     = "ssh"
     user     = "ubuntu"
-    private_key = file(var.local_aws_private_key_path)
+    private_key = file(var.my_local_aws_private_key_path)
     host     = self.public_ip
   } 
 

@@ -1,6 +1,6 @@
 resource "aws_instance" "mail_server" {
   count = var.mail_want == true ? var.mail_count : 0 
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-02eb7a4783e7e9317"
   instance_type = var.instance_type
   key_name      = var.key_name
   

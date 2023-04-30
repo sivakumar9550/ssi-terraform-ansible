@@ -3,6 +3,14 @@ variable "my_region" {
   description = "This variable is used to specify region"
 }
 
+variable "my_access_key" {
+  type = string
+}
+
+variable "my_secret_key" {
+  type = string
+}
+
 variable "instance_type" {
     type = string
     default = "t2.micro"  

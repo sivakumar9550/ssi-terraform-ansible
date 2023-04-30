@@ -48,11 +48,11 @@ variable "my_local_aws_private_key_path" {
 }
 
 variable "names" {
-  type = string
+  type = list(string)
 }
 
 variable "status" {
-  type = string
+  type = list(string)
 }
 
 

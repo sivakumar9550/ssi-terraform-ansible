@@ -47,14 +47,6 @@ variable "my_local_aws_private_key_path" {
 
 }
 
-variable "names" {
-  type = list(string)
-}
-
-variable "status" {
-  type    = list(string)
-  default = ["active", "inactive"]
-}
 
 variable "db_want" {
   type    = bool

@@ -27,7 +27,7 @@ resource "aws_route53_record" "db" {
   records = [aws_instance.db_server[0].public_ip]
 }
 
-resource "aws_route53_record" "httpd_server" {
+resource "aws_route53_record" "httpd" {
   zone_id = data.aws_route53_zone.hosted_zone.zone_id
   name    = var.my_httpd_server_sub_domain_name
   type    = "A"
